@@ -460,6 +460,195 @@ export const anthropicClaudeSonnet46V1 = (
   });
 };
 
+export const anthropicClaudeSonnet5 = (
+  inferenceRegion: string = "us",
+): ModelReference<typeof GenerationCommonConfigSchema> => {
+  return modelRef({
+    name: `aws-bedrock/${inferenceRegion}.anthropic.claude-sonnet-5`,
+    info: {
+      versions: [`${inferenceRegion}.anthropic.claude-sonnet-5`],
+      label: "Anthropic - Claude Sonnet 5",
+      supports: {
+        multiturn: true,
+        tools: true,
+        media: true,
+        systemRole: true,
+        output: ["text", "json"],
+        constrained: "all"
+      },
+    },
+    configSchema: GenerationCommonConfigSchema,
+  });
+};
+
+export const anthropicClaudeSonnet55 = (
+  inferenceRegion: string = "us",
+): ModelReference<typeof GenerationCommonConfigSchema> => {
+  return modelRef({
+    name: `aws-bedrock/${inferenceRegion}.anthropic.claude-sonnet-5-5`,
+    info: {
+      versions: [`${inferenceRegion}.anthropic.claude-sonnet-5-5`],
+      label: "Anthropic - Claude Sonnet 5.5",
+      supports: {
+        multiturn: true,
+        tools: true,
+        media: true,
+        systemRole: true,
+        output: ["text", "json"],
+        constrained: "all"
+      },
+    },
+    configSchema: GenerationCommonConfigSchema,
+  });
+};
+
+export const anthropicClaudeHaiku55 = (
+  inferenceRegion: string = "us",
+): ModelReference<typeof GenerationCommonConfigSchema> => {
+  return modelRef({
+    name: `aws-bedrock/${inferenceRegion}.anthropic.claude-haiku-5-5`,
+    info: {
+      versions: [`${inferenceRegion}.anthropic.claude-haiku-5-5`],
+      label: "Anthropic - Claude Haiku 5.5",
+      supports: {
+        multiturn: true,
+        tools: true,
+        media: true,
+        systemRole: true,
+        output: ["text", "json"],
+        constrained: "all"
+      },
+    },
+    configSchema: GenerationCommonConfigSchema,
+  });
+};
+
+export const anthropicClaudeOpus5 = (
+  inferenceRegion: string = "us",
+): ModelReference<typeof GenerationCommonConfigSchema> => {
+  return modelRef({
+    name: `aws-bedrock/${inferenceRegion}.anthropic.claude-opus-5`,
+    info: {
+      versions: [`${inferenceRegion}.anthropic.claude-opus-5`],
+      label: "Anthropic - Claude Opus 5",
+      supports: {
+        multiturn: true,
+        tools: true,
+        media: true,
+        systemRole: true,
+        output: ["text", "json"],
+        constrained: "all"
+      },
+    },
+    configSchema: GenerationCommonConfigSchema,
+  });
+};
+
+export const anthropicClaudeOpus55 = (
+  inferenceRegion: string = "us",
+): ModelReference<typeof GenerationCommonConfigSchema> => {
+  return modelRef({
+    name: `aws-bedrock/${inferenceRegion}.anthropic.claude-opus-5-5`,
+    info: {
+      versions: [`${inferenceRegion}.anthropic.claude-opus-5-5`],
+      label: "Anthropic - Claude Opus 5.5",
+      supports: {
+        multiturn: true,
+        tools: true,
+        media: true,
+        systemRole: true,
+        output: ["text", "json"],
+        constrained: "all"
+      },
+    },
+    configSchema: GenerationCommonConfigSchema,
+  });
+};
+
+export const anthropicClaudeFable5 = (
+  inferenceRegion: string = "us",
+): ModelReference<typeof GenerationCommonConfigSchema> => {
+  return modelRef({
+    name: `aws-bedrock/${inferenceRegion}.anthropic.claude-fable-5`,
+    info: {
+      versions: [`${inferenceRegion}.anthropic.claude-fable-5`],
+      label: "Anthropic - Claude Fable 5",
+      supports: {
+        multiturn: true,
+        tools: true,
+        media: true,
+        systemRole: true,
+        output: ["text", "json"],
+        constrained: "all"
+      },
+    },
+    configSchema: GenerationCommonConfigSchema,
+  });
+};
+
+export const anthropicClaudeFable51 = (
+  inferenceRegion: string = "us",
+): ModelReference<typeof GenerationCommonConfigSchema> => {
+  return modelRef({
+    name: `aws-bedrock/${inferenceRegion}.anthropic.claude-fable-5-1`,
+    info: {
+      versions: [`${inferenceRegion}.anthropic.claude-fable-5-1`],
+      label: "Anthropic - Claude Fable 5.1",
+      supports: {
+        multiturn: true,
+        tools: true,
+        media: true,
+        systemRole: true,
+        output: ["text", "json"],
+        constrained: "all"
+      },
+    },
+    configSchema: GenerationCommonConfigSchema,
+  });
+};
+
+export const anthropicClaudeOpus47 = (
+  inferenceRegion: string = "us",
+): ModelReference<typeof GenerationCommonConfigSchema> => {
+  return modelRef({
+    name: `aws-bedrock/${inferenceRegion}.anthropic.claude-opus-4-7`,
+    info: {
+      versions: [`${inferenceRegion}.anthropic.claude-opus-4-7`],
+      label: "Anthropic - Claude Opus 4.7",
+      supports: {
+        multiturn: true,
+        tools: true,
+        media: true,
+        systemRole: true,
+        output: ["text", "json"],
+        constrained: "all"
+      },
+    },
+    configSchema: GenerationCommonConfigSchema,
+  });
+};
+
+export const anthropicClaudeOpus48 = (
+  inferenceRegion: string = "us",
+): ModelReference<typeof GenerationCommonConfigSchema> => {
+  return modelRef({
+    name: `aws-bedrock/${inferenceRegion}.anthropic.claude-opus-4-8`,
+    info: {
+      versions: [`${inferenceRegion}.anthropic.claude-opus-4-8`],
+      label: "Anthropic - Claude Opus 4.8",
+      supports: {
+        multiturn: true,
+        tools: true,
+        media: true,
+        systemRole: true,
+        output: ["text", "json"],
+        constrained: "all"
+      },
+    },
+    configSchema: GenerationCommonConfigSchema,
+  });
+};
+
 export const anthropicClaude35HaikuV1 = (
   inferenceRegion: string = "us",
 ): ModelReference<typeof GenerationCommonConfigSchema> => {
@@ -1185,6 +1374,24 @@ export const SUPPORTED_AWS_BEDROCK_MODELS = (
       anthropicClaudeOpus46V1(inferenceRegion),
     [`${inferenceRegion}.anthropic.claude-sonnet-4-6`]:
       anthropicClaudeSonnet46V1(inferenceRegion),
+    [`${inferenceRegion}.anthropic.claude-sonnet-5`]:
+      anthropicClaudeSonnet5(inferenceRegion),
+    [`${inferenceRegion}.anthropic.claude-sonnet-5-5`]:
+      anthropicClaudeSonnet55(inferenceRegion),
+    [`${inferenceRegion}.anthropic.claude-haiku-5-5`]:
+      anthropicClaudeHaiku55(inferenceRegion),
+    [`${inferenceRegion}.anthropic.claude-opus-5`]:
+      anthropicClaudeOpus5(inferenceRegion),
+    [`${inferenceRegion}.anthropic.claude-opus-5-5`]:
+      anthropicClaudeOpus55(inferenceRegion),
+    [`${inferenceRegion}.anthropic.claude-fable-5`]:
+      anthropicClaudeFable5(inferenceRegion),
+    [`${inferenceRegion}.anthropic.claude-fable-5-1`]:
+      anthropicClaudeFable51(inferenceRegion),
+    [`${inferenceRegion}.anthropic.claude-opus-4-7`]:
+      anthropicClaudeOpus47(inferenceRegion),
+    [`${inferenceRegion}.anthropic.claude-opus-4-8`]:
+      anthropicClaudeOpus48(inferenceRegion),
     [`${inferenceRegion}.meta.llama4-maverick-17b-instruct-v1:0`]:
       metaLlama4Maverick17BInstruct(inferenceRegion),
     [`${inferenceRegion}.meta.llama4-scout-17b-instruct-v1:0`]:
